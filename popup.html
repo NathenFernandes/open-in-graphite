@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Open in Graphite</title>
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" width="28" height="28">
+    <h1>Open in Graphite</h1>
+    <label class="switch" title="Show the button on GitHub PRs">
+      <input type="checkbox" id="enabled">
+      <span></span>
+    </label>
+  </header>
+
+  <main id="controls">
+    <div class="preview" id="preview-stage">
+      <a id="open-in-graphite-btn" tabindex="-1"></a>
+    </div>
+
+    <section>
+      <h2>Style</h2>
+      <div class="segmented" id="theme">
+        <button data-value="graphite"><i class="swatch graphite"></i>Graphite</button>
+        <button data-value="cream"><i class="swatch cream"></i>Cream</button>
+        <button data-value="subtle"><i class="swatch subtle"></i>Subtle</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Position</h2>
+      <div class="corners" id="position">
+        <button data-value="top-left" title="Top left"></button>
+        <button data-value="top-right" title="Top right"></button>
+        <button data-value="bottom-left" title="Bottom left"></button>
+        <button data-value="bottom-right" title="Bottom right"></button>
+      </div>
+    </section>
+
+    <section class="toggles">
+      <label class="row">
+        <span>Show label</span>
+        <span class="switch"><input type="checkbox" id="showLabel"><span></span></span>
+      </label>
+      <label class="row">
+        <span>Open in a new tab</span>
+        <span class="switch"><input type="checkbox" id="newTab"><span></span></span>
+      </label>
+    </section>
+  </main>
+
+  <script src="settings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
